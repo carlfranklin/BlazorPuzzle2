@@ -29,12 +29,12 @@
     <script src="_framework/blazor.webassembly.js"></script>
     <script>
 
-        window.DoSomeJavaScript = (blazorComponnet) => {
+        window.DoSomeJavaScript = (blazorComponent) => {
 
             // Wait 10 seconds
             setTimeout(function () {
                 // call back
-                blazorComponnet.invokeMethodAsync("SomethingHappened")
+                blazorComponent.invokeMethodAsync("SomethingHappened")
             }, 5000);
         }
 
